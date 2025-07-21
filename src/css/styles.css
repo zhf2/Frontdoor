@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(to bottom,
+            #001950,
+            #FFCC33 25%,
+            #79BBEA 33.33%,
+            #BADDF6 50%,
+            #FC9601 66.67%,
+            #001950 83.33%);
+    background-size: 100% 3000%;
+    height: 100vh;
+    animation: gradient 86400s linear infinite;
+    overflow: hidden;
+}
+
+/* Key times, like sunrise */
+@keyframes gradient {
+    0% { /* 12 am */
+        background-position-y: 0;
+    }
+    16.67% { /* 4 am */
+        background-position-y: 7%;
+    }
+    25% { /* 6 am */
+        background-position-y: 25%;
+    }
+    70.83% { /* 7pm */
+        background-position-y: 52%;
+    }
+    91.667% { /* 10 pm */
+        background-position-y: 88.33%;
+    }
+    100% { /* 12 am again */
+        background-position-y: 100%;
+    }
+}
